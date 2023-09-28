@@ -63,13 +63,14 @@ class Program
         List<Product> products = new List<Product>()
         {
 
-            new Product { Name = "Samsung S21 5g", Price=15000, CategoryId =1},
-            new Product {Name = "Iphone 14 pro max", Price=80000, CategoryId=1},
-            new Product {Name = "Iphone 14", Price=65000, CategoryId=1},
-            new Product {Name ="Buzdolabı", Price=10000, CategoryId = 2},
-            new Product {Name ="Çamaşır Makinesi", Price=6000, CategoryId = 2}
+            new Product {Id=1, Name = "Samsung S21 5g", Price=15000, CategoryId =1},
+            new Product {Id=2,Name = "Iphone 14 pro max", Price=80000, CategoryId=1},
+            new Product {Id=3,Name = "Iphone 14", Price=65000, CategoryId=1},
+            new Product {Id=4,Name ="Buzdolabı", Price=10000, CategoryId = 2},
+            new Product {Id=5,Name ="Çamaşır Makinesi", Price=6000, CategoryId = 2}
 
         };
+        
 
         // neye benziyor  => 
 
@@ -103,6 +104,31 @@ class Program
         //var resultIII = products.FirstOrDefault();
         //var resultIV = products.FirstOrDefault(CheckName4);
 
+    }
+
+    /// <summary>
+    ///  ÖDEV => 
+    ///  Kategorisi Beyaz Eşya olan ürünlerin Adları ile beraber, satış toplamları : Buzdolabı - 50.000
+    ///            Televizyon - 200.0000
+    ///            
+    ///  En çok satışı olan 3 ürünün adı ve kategorisini
+    ///  
+    ///  Aynı örneğin yapılması
+    ///  
+    ///  En az satılan 2 ürünün adı ve kategorisi
+    /// 
+    /// 
+    ///  kategorilere göre ortalama satış fiyatı ... 
+    ///  Beyaz Eşya -> 50.000 
+    ///  Elektronik -> 300.000
+    ///  Giyim -> 500.000
+    ///  
+    /// 
+    /// </summary>
+    public class Sales
+    {
+        public int Amount { get; set; }
+        public int ProductId { get; set; }
     }
 
     public class ProductCategoryListObject
@@ -159,6 +185,7 @@ class Program
 }
 class Product
 {
+    public int Id { get; set; }
     public int Price { get; set; }
     public string Name { get; set; }
 
