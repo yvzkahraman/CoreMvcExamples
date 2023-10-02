@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D01.Delegates", "D01.Delega
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{056DA627-917B-4CBA-AD0D-B93DC6DADE57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates02", "Delegates02\Delegates02.csproj", "{DBD6DBB8-1594-45DE-AC0D-DEE2D993CEF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates02", "Delegates02\Delegates02.csproj", "{DBD6DBB8-1594-45DE-AC0D-DEE2D993CEF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesTekrar", "DelegatesTekrar\DelegatesTekrar.csproj", "{65170370-7AB5-4622-9370-9DA0D8FCC671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{36E365A1-38B2-4B9D-AFEA-C3D1A2711F59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{DBD6DBB8-1594-45DE-AC0D-DEE2D993CEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBD6DBB8-1594-45DE-AC0D-DEE2D993CEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBD6DBB8-1594-45DE-AC0D-DEE2D993CEF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65170370-7AB5-4622-9370-9DA0D8FCC671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65170370-7AB5-4622-9370-9DA0D8FCC671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65170370-7AB5-4622-9370-9DA0D8FCC671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65170370-7AB5-4622-9370-9DA0D8FCC671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E365A1-38B2-4B9D-AFEA-C3D1A2711F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E365A1-38B2-4B9D-AFEA-C3D1A2711F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E365A1-38B2-4B9D-AFEA-C3D1A2711F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E365A1-38B2-4B9D-AFEA-C3D1A2711F59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

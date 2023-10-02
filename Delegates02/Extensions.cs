@@ -12,6 +12,8 @@ namespace Delegates02
         {
             List<T> result = new List<T>();
 
+           
+
             foreach (var product in products)
             {
                 if (func.Invoke(product))
@@ -22,4 +24,7 @@ namespace Delegates02
             return result;
         }
     }
+
+
+    // 
 }
