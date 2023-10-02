@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Example01.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Example01.Controllers
 {

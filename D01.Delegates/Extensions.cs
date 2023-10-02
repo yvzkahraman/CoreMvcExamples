@@ -7,6 +7,6 @@ namespace D01.Delegates
 {
     public static class Extensions
     {
-        public static List<Product>
+        //public static List<Product>
     }
 }

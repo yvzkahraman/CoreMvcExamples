@@ -1,4 +1,7 @@
-﻿namespace Example01.Entities
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
+
+namespace Example01.Entities
 {
     public class Product
     {
@@ -10,9 +13,24 @@
 
     // DbContext => 
 
-    public class ProductDbContext
+    public class ProductDbContext : DbContext
     {
+        //public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options)
+        //{
+        //}
 
+        public ProductDbContext()
+        {
+            
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("server=.\\SQLExpress; database=productdb; integrated security = true; TrustServerCertificate=True;");
+            base.OnConfiguring(optionsBuilder);
+        }
+
+        public DbSet<Product> Products { get; set; }
 
     }
 
