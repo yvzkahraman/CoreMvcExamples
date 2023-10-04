@@ -15,19 +15,8 @@ namespace Example01.Entities
 
     public class ProductDbContext : DbContext
     {
-        //public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options)
-        //{
-        //}
-
-        public ProductDbContext()
+        public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options)
         {
-            
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("server=.\\SQLExpress; database=productdb; integrated security = true; TrustServerCertificate=True;");
-            base.OnConfiguring(optionsBuilder);
         }
 
         public DbSet<Product> Products { get; set; }
