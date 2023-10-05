@@ -26,71 +26,71 @@ namespace Example01.Controllers
         public IActionResult Index()
         {
 
-            var products = context.Products.AsNoTracking().ToList();
+            //var products = context.Products.AsNoTracking().ToList();
 
-            var product = products[0];
-            var state = context.Entry(product).State;
+            //var product = products[0];
+            //var state = context.Entry(product).State;
 
-            products[0].Name = "Samsung S22";
+            //products[0].Name = "Samsung S22";
 
-            var state2 = context.Entry(product).State;
+            //var state2 = context.Entry(product).State;
 
+
+            ////context.Products.Update(products[0]);
+
+            ////var state3= context.Entry(product).State;
 
             //context.Products.Update(products[0]);
 
-            //var state3= context.Entry(product).State;
+            ////connected Entity => ben veritabanından bir veri çekeceğim, o çekeceğim veri üstünde 
 
-            context.Products.Update(products[0]);
+            ////disconnected Entity 
 
-            //connected Entity => ben veritabanından bir veri çekeceğim, o çekeceğim veri üstünde 
-
-            //disconnected Entity 
-
-            Product product2 = new Product { };
-            context.Products.Add(product2);
-            context.SaveChanges();
+            //Product product2 = new Product { };
+            //context.Products.Add(product2);
+            //context.SaveChanges();
 
 
 
-            //ASLA YAPMA !!
+            ////ASLA YAPMA !!
 
 
-            Product product3 = new Product { Id=2 };
-            context.Products.Update(product2);
-            context.SaveChanges();
+            //Product product3 = new Product { Id=2 };
+            //context.Products.Update(product2);
+            //context.SaveChanges();
 
 
 
 
-            context.Entry(product).State = EntityState.Modified;
+            //context.Entry(product).State = EntityState.Modified;
 
-            //context.Products.Add()
+            ////context.Products.Add()
 
-            //if(state != EntityState.Detached)
-            //{
-            //    if (state == EntityState.Modified)
-            //    {
-            //        /*adonet sorgusu */
-            //    }
-            //    else if (state == EntityState.Added)
-            //    {
-            //        /* ekleme adonet */
-            //    }
-            //}
+            ////if(state != EntityState.Detached)
+            ////{
+            ////    if (state == EntityState.Modified)
+            ////    {
+            ////        /*adonet sorgusu */
+            ////    }
+            ////    else if (state == EntityState.Added)
+            ////    {
+            ////        /* ekleme adonet */
+            ////    }
+            ////}
           
 
-            // olayı yapan değiştiren ekleyen bu arkadaş ... 
+            //// olayı yapan değiştiren ekleyen bu arkadaş ... 
 
 
-            // adoyu 
-            // modified => update added => insert detach , unchanged
-            // kayıtları izlemesi ... 
+            //// adoyu 
+            //// modified => update added => insert detach , unchanged
+            //// kayıtları izlemesi ... 
 
-            //connected entity
-            //disconnected entity
+            ////connected entity
+            ////disconnected entity
 
 
-            context.SaveChanges();
+            //context.SaveChanges();
 
             return View();
         }
